@@ -1,0 +1,43 @@
+
+Before we start, we should get the android ndk environmnet running.
+We consider you already have:
+   - android-sdk-linux folder
+   - android-ndk-r* folder
+   - Eclipse and Native Activities working
+   
+
+1. I build a set of scripts to automatize the process of building the
+shared libraries. The user configs can be found in the user.config file.
+It's used throughout the scripts.
+
+	1.1. You MUST edit this file to your own configurations, paths etc.
+   
+
+
+2. We now need to get a toolchain. I tried to use the ones directly 
+accessible through the ndk, but had some errors. So, I created a separate
+toolchain to work with.
+
+   2.1. In some builds, the script that makes the standalone toolchain
+        have some errors. So, in this folder you will find the file
+        make-standalone-toolchain-fixed.sh
+        
+        You can rename that file and put it as your: 
+           $ndk_path/build/tools/make-standalone-toolchain.sh
+           
+   2.2. Now we can create the toolchain by running the script:
+        ./create-toolchain.sh
+        
+
+3. We can now try to compile panda to our chosen android platform. The
+script ./build-panda3d.sh assumes a complete build (slow). A better 
+script can be provided later, but when facing an error, the user can 
+inspect the contents of the script and adjusts the actions made. 
+
+So, run the: ./build-panda3d.sh
+
+As a result you will get a libp3android.so that you can install where you
+desire. By default it install on the path defined in user.config.
+
+
+

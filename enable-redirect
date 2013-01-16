@@ -1,0 +1,6 @@
+#!/bin/sh
+#NOTE: I tried to put that in /data/local.prop with no success
+
+adb shell stop
+adb shell setprop log.redirect-stdio true
+adb shell start
