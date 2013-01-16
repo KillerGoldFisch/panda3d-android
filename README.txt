@@ -1,6 +1,6 @@
-Hi!
+Read the "How to Compile.txt"
 
-Some steps:
+Some steps I followed to get here:
 
 1. Get the Android Development Environment ready.
 2. Run and see some Android application running.
