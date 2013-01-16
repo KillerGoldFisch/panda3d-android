@@ -49,9 +49,6 @@
 #defer COMPILE_C $[CC] --sysroot=$[ANDROID_SYSROOT] -c $[CFLAGS_GEN] $[ARCH_FLAGS] -o $[target] -I$[ANDROID_PLATFORM_PATH]/usr/include $[ipath:%=-I%] $[flags] $[source]
 #defer COMPILE_C++ $[CXX] --sysroot=$[ANDROID_SYSROOT] -c $[C++FLAGS_GEN] $[ARCH_FLAGS] -o $[target] -I$[ANDROID_PLATFORM_PATH]/usr/include $[ipath:%=-I%] $[flags] $[source]
 
-// Android Toolchain. The bin directory should be in the path
-//#define ANDROID_PLATFORM_PATH /home/heekinho/Downloads/android-ndk-r7c/platforms/android-9/arch-arm
-
 
 // How to generate a shared C or C++ library.  $[source] and $[target]
 // as above, and $[libs] is a space-separated list of dependent

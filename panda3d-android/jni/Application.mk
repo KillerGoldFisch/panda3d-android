@@ -6,4 +6,4 @@ APP_CPPFLAGS += -frtti
 APP_OPTIM := debug
 
 PANDA_LIB_PATH := panda3d-libs
-PANDA_INCLUDE_PATH := /home/heekinho/Workspace/panda3d/android-built/include
+PANDA_INCLUDE_PATH := ~/Workspace/panda3d/android-built/include
